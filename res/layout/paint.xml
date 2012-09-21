@@ -42,10 +42,10 @@
         <org.androidsoft.coloring.ui.widget.ColorButton android:layout_width="wrap_content"
                                          android:layout_height="wrap_content"
                                          coloring:color="#0000FF"/>
-        <org.androidsoft.coloring.ui.widget.ColorButton android:layout_width="wrap_content"
+<!--        <org.androidsoft.coloring.ui.widget.ColorButton android:layout_width="wrap_content"
                                          android:layout_height="wrap_content"
                                          coloring:color="#800080"/>
-<!--        <org.androidsoft.coloring.ui.widget.ColoringImageButton android:id="@+id/pick_color_button"
+        <org.androidsoft.coloring.ui.widget.ColoringImageButton android:id="@+id/pick_color_button"
                                          android:layout_width="wrap_content" 
                                          android:layout_height="wrap_content"/>
                                          -->
