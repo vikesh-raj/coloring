@@ -13,12 +13,12 @@
  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  See the License for the specific language governing permissions and
  limitations under the License.
---> 
+-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="org.androidsoft.coloring"
-          android:versionName="1.0.0" 
+          android:versionName="1.0.0"
           android:versionCode="1">
-              
+
     <uses-sdk android:minSdkVersion="5" android:targetSdkVersion="11" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
@@ -28,17 +28,18 @@
         <activity android:name=".ui.activity.SplashActivity"
                   android:noHistory="true"
                   android:label="@string/app_name">
+        </activity>
+
+        <activity android:name=".ui.activity.PaintActivity"
+                  android:screenOrientation="landscape"
+                  android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-        <activity android:name=".ui.activity.PaintActivity"
-                  android:screenOrientation="landscape"
-                  android:launchMode="singleTask">
-        </activity>
-        
+
+
         <activity android:name=".ui.activity.StartNewActivity" >
              <!--     android:theme="@style/Theme.Transparent" -->
             <intent-filter>
@@ -46,21 +47,20 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        
-        <activity android:name=".ui.activity.PickColorActivity" > 
+        <activity android:name=".ui.activity.PickColorActivity" >
              <!-- android:theme="@style/Theme.Transparent" -->
             <intent-filter>
                 <action android:name="org.androidsoft.coloring.paint.PICK_COLOR" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        
-        <activity android:name=".ui.activity.CreditsActivity" android:hardwareAccelerated="true" > 
+
+        <activity android:name=".ui.activity.CreditsActivity" android:hardwareAccelerated="true" >
             <intent-filter>
                 <action android:name="org.androidsoft.coloring.paint.ABOUT" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        
+
     </application>
-</manifest> 
+</manifest>
